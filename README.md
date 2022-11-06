@@ -4,6 +4,7 @@
 
 - [Book: Structure and Interpretation of Computer Programs](https://sarabander.github.io/sicp/html/index.xhtml)
 - [Lectures: Brian Harvey’s SICP](https://archive.org/details/ucberkeley_webcast_l28HAzKy0N8)
+- [Lecutres: MIT](https://ocw.mit.edu/courses/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video_galleries/video-lectures/)
 - https://people.eecs.berkeley.edu/~bh/ssch27/appendix-running.html
 
 ## Scheme
