@@ -43,3 +43,6 @@ Absolute path (Unix)
 
 TODO: Write util to make it easier to load absolute files as described [here](https://people.eecs.berkeley.edu/~bh/ssch27/appendix-running.html#text2).
 
+## Progress
+
+- Lectue 2, 28:30 - same functions, different procedures
