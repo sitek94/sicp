@@ -45,4 +45,4 @@ TODO: Write util to make it easier to load absolute files as described [here](ht
 
 ## Progress
 
-- Lectue 2, 28:30 - same functions, different procedures
+- Lectue 2, 37:20 - same functions, different procedures
