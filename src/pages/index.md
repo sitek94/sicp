@@ -1,3 +1,7 @@
+---
+layout: "../layouts/BaseLayout.astro"
+---
+
 # Structure and Interpretation of Computer Programs
 
 ## Resources
@@ -16,10 +20,10 @@ I'm using **STKlos** (version 1.70) Scheme system, which can be found here:
 
 - [STKlos](https://stklos.net/index.html)
 
-
 ### Simply Scheme utils
 
-These are some utility functions that are used in the lectures. It's possible to load them before going interactive: 
+These are some utility functions that are used in the lectures. It's possible to load them before going interactive:
+
 ```shell
 stklos --load /home/sitek/code/sicp/lectures/_simply.scm
 ```
@@ -33,11 +37,13 @@ alias stk='stklos --load /home/sitek/code/sicp/lectures/_simply.scm'
 ### Loading files and utils
 
 In the same directory
+
 ```scm
 (load "utils.scm")
 ```
 
 Absolute path (Unix)
+
 ```scm
 (load "/home/user/sicp/utils.scm")
 ```
