@@ -38,13 +38,13 @@ alias stk='stklos --load /home/sitek/code/sicp/lectures/_simply.scm'
 
 In the same directory
 
-```scm
+```scheme
 (load "utils.scm")
 ```
 
 Absolute path (Unix)
 
-```scm
+```scheme
 (load "/home/user/sicp/utils.scm")
 ```
 

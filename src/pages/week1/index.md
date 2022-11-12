@@ -1,5 +1,5 @@
 ---
-layout: '../../NotesLayout.astro'
+layout: '../../layouts/NotesLayout.astro'
 title: 'CS 61A Week 1: Functional programming'
 ---
 
@@ -18,7 +18,11 @@ People who’ve taken CS 3: Don’t use the CS 3 higher-order procedures such as
     - [ ] Finished
 
 2.  Write a procedure squares that takes a sentence of numbers as its argument and returns a sentence of the squares of
-    the numbers: `shell > (squares ’(2 3 4 5)) (4 9 16 25) `
+    the numbers:
+
+    ```shell
+    > (squares ’(2 3 4 5)) (4 9 16 25)
+    ```
 
     - [ ] Finished
 
@@ -26,50 +30,49 @@ People who’ve taken CS 3: Don’t use the CS 3 higher-order procedures such as
     words I or me is replaced by you, while every instance of you is replaced by me except at the beginning of the
     sentence, where it’s replaced by I. (Don’t worry about capitalization of letters.) Example:
 
-        ```shell
-        > (switch ’(You told me that I should wake you up))
-        (i told you that you should wake me up)
-        ```
+    ```shell
+    > (switch ’(You told me that I should wake you up))
+    (i told you that you should wake me up)
+    ```
 
-        - [ ] Finished
+    - [ ] Finished
 
 4.  Write a predicate ordered? that takes a sentence of numbers as its argument and returns a true value if the numbers
     are in ascending order, or a false value otherwise.
 
-        - [ ] Finished
+    - [ ] Finished
 
 5.  Write a procedure ends-e that takes a sentence as its argument and returns a sentence containing only those words of
     the argument whose last letter is E:
 
-        ```shell
-        > (ends-e ’(please put the salami above the blue elephant))
-        (please the above the blue)
-        ```
-        - [ ] Finished
+    ```shell
+    > (ends-e ’(please put the salami above the blue elephant))
+    (please the above the blue)
+    ```
+
+    - [ ] Finished
 
 6.  Most versions of Lisp provide and and or procedures like the ones on page 19. In principle there is no reason why
     these can’t be ordinary procedures, but some versions of Lisp make them special forms. Suppose, for example, we
     evaluate
 
-        ```scm
-        (or (= x 0) (= y 0) (= z 0))
-        ```
+    ```scheme
+    (or (= x 0) (= y 0) (= z 0))
+    ```
 
-        If or is an ordinary procedure, all three argument expressions will be evaluated before or
-        is invoked. But if the variable x has the value 0, we know that the entire expression has
-        to be true regardless of the values of y and z. A Lisp interpreter in which or is a special
-        form can evaluate the arguments one by one until either a true one is found or it runs out
-        of arguments.
+    If or is an ordinary procedure, all three argument expressions will be evaluated before or is invoked. But if the
+    variable x has the value 0, we know that the entire expression has to be true regardless of the values of y and z. A
+    Lisp interpreter in which or is a special form can evaluate the arguments one by one until either a true one is
+    found or it runs out of arguments.
 
-        Your mission is to devise a test that will tell you whether Scheme’s and and or are special
-        forms or ordinary functions. This is a somewhat tricky problem, but it’ll get you thinking
-        about the evaluation process more deeply than you otherwise might.
+    Your mission is to devise a test that will tell you whether Scheme’s and and or are special forms or ordinary
+    functions. This is a somewhat tricky problem, but it’ll get you thinking about the evaluation process more deeply
+    than you otherwise might.
 
-        Why might it be advantageous for an interpreter to treat or as a special form and evaluate
-        its arguments one at a time? Can you think of reasons why it might be advantageous to
-        treat or as an ordinary function?
+    Why might it be advantageous for an interpreter to treat or as a special form and evaluate its arguments one at a
+    time? Can you think of reasons why it might be advantageous to treat or as an ordinary function?
 
-        - [ ] Finished
+    - [ ] Finished
 
 ## Features of the week
 
