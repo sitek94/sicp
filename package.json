@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "prebuild": "cp -r ../notes/** ./src/pages",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
