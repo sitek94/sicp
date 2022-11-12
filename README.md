@@ -1,49 +1,50 @@
-# Structure and Interpretation of Computer Programs
+# Welcome to [Astro](https://astro.build)
 
-## Resources
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/basics)
 
-- [Book: Structure and Interpretation of Computer Programs](https://sarabander.github.io/sicp/html/index.xhtml)
-- [CS 61A by Brian Harvey](https://archive.org/details/ucberkeley-webcast-PL3E89002AA9B9879E)
-  - [Course resources: notes, labs and homeworks solutions](https://people.eecs.berkeley.edu/~bh/61a-pages/)
-- [Lectures: MIT](https://ocw.mit.edu/courses/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video_galleries/video-lectures/)
-- https://people.eecs.berkeley.edu/~bh/ssch27/appendix-running.html
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-## Scheme
-
-### Version
-
-I'm using **STKlos** (version 1.70) Scheme system, which can be found here:
-
-- [STKlos](https://stklos.net/index.html)
+![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
 
 
-### Simply Scheme utils
+## 🚀 Project Structure
 
-These are some utility functions that are used in the lectures. It's possible to load them before going interactive: 
-```shell
-stklos --load /home/sitek/code/sicp/lectures/_simply.scm
+Inside of your Astro project, you'll see the following folders and files:
+
+```
+/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── components/
+│   │   └── Card.astro
+│   ├── layouts/
+│   │   └── Layout.astro
+│   └── pages/
+│       └── index.astro
+└── package.json
 ```
 
-Because I'm always loading this file, I created an alias for it
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-```bash
-alias stk='stklos --load /home/sitek/code/sicp/lectures/_simply.scm'
-```
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-### Loading files and utils
+Any static assets, like images, can be placed in the `public/` directory.
 
-In the same directory
-```scm
-(load "utils.scm")
-```
+## 🧞 Commands
 
-Absolute path (Unix)
-```scm
-(load "/home/user/sicp/utils.scm")
-```
+All commands are run from the root of the project, from a terminal:
 
-TODO: Write util to make it easier to load absolute files as described [here](https://people.eecs.berkeleqy.edu/~bh/ssch27/appendix-running.html#text2).
+| Command                | Action                                             |
+| :--------------------- | :------------------------------------------------- |
+| `npm install`          | Installs dependencies                              |
+| `npm run dev`          | Starts local dev server at `localhost:3000`        |
+| `npm run build`        | Build your production site to `./dist/`            |
+| `npm run preview`      | Preview your build locally, before deploying       |
+| `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
+| `npm run astro --help` | Get help using the Astro CLI                       |
 
-## Progress
+## 👀 Want to learn more?
 
-- Lectue 2, 37:20 - same functions, different procedures
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
