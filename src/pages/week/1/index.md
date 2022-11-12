@@ -1,7 +1,8 @@
 ---
-layout: '../../layouts/NotesLayout.astro'
-title: 'CS 61A Week 1: Functional programming'
+layout: '../../../layouts/MdLayout.astro'
 ---
+
+# CS 61A Week 1: Functional programming
 
 ## Reading
 

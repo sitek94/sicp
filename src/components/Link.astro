@@ -1,0 +1,25 @@
+---
+import clsx from 'clsx'
+
+interface Props {
+  url: string
+  external?: boolean
+}
+
+const {url, external} = Astro.props
+
+const isActive = Astro.url.pathname === url
+---
+
+<a
+  href={url}
+  target={external ? '_blank' : undefined}
+  class={clsx(
+    'block whitespace-nowrap border-l-4  px-3 py-2 text-sm font-medium',
+    isActive
+      ? 'border-primary-600 bg-primary-50 text-primary-600 dark:border-primary-400 dark:bg-primary-900 dark:text-white'
+      : 'border-transparent text-gray-600 hover:bg-gray-50 hover:text-gray-900 dark:text-gray-100 dark:hover:bg-gray-800 dark:hover:text-white',
+  )}
+>
+  <slot />
+</a>

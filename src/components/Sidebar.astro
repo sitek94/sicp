@@ -1,0 +1,31 @@
+---
+import Link from './Link.astro'
+
+const weeks = await Astro.glob('../pages/week/**/*.md')
+
+const links = [
+  {
+    url: '/',
+    text: 'Home',
+  },
+  ...weeks.map(({url}) => ({
+    url,
+    text: `Week ${url.split('/week/')[1]}`,
+  })),
+  {
+    url: 'https://github.com/sitek94/sicp',
+    text: 'GitHub Repo',
+    external: true,
+  },
+]
+---
+
+<nav class="space-y-1" aria-label="Sidebar">
+  {
+    links.map(({url, text, external}) => (
+      <Link url={url} external={external}>
+        {text}
+      </Link>
+    ))
+  }
+</nav>

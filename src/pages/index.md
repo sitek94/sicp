@@ -1,5 +1,5 @@
 ---
-layout: '../layouts/BaseLayout.astro'
+layout: '../layouts/MdLayout.astro'
 ---
 
 # Structure and Interpretation of Computer Programs
