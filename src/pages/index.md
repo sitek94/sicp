@@ -1,5 +1,5 @@
 ---
-layout: "../layouts/BaseLayout.astro"
+layout: '../layouts/BaseLayout.astro'
 ---
 
 # Structure and Interpretation of Computer Programs
@@ -48,7 +48,8 @@ Absolute path (Unix)
 (load "/home/user/sicp/utils.scm")
 ```
 
-TODO: Write util to make it easier to load absolute files as described [here](https://people.eecs.berkeleqy.edu/~bh/ssch27/appendix-running.html#text2).
+TODO: Write util to make it easier to load absolute files as described
+[here](https://people.eecs.berkeleqy.edu/~bh/ssch27/appendix-running.html#text2).
 
 ## Progress
 
