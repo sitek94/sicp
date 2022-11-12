@@ -1,9 +1,9 @@
 ---
 import Link from './Link.astro'
 
-const weeks = await Astro.glob('../pages/week/**/*.md')
+const weeks = await Astro.glob('../pages/week/**/*.md?(x)')
 
-const links = [
+const links: {url: string; text: string; external?: boolean}[] = [
   {
     url: '/',
     text: 'Home',
