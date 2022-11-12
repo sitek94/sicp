@@ -3,8 +3,9 @@
 ## Resources
 
 - [Book: Structure and Interpretation of Computer Programs](https://sarabander.github.io/sicp/html/index.xhtml)
-- [Lectures: Brian Harvey’s SICP](https://archive.org/details/ucberkeley-webcast-PL3E89002AA9B9879E)
-- [Lecutres: MIT](https://ocw.mit.edu/courses/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video_galleries/video-lectures/)
+- [CS 61A by Brian Harvey](https://archive.org/details/ucberkeley-webcast-PL3E89002AA9B9879E)
+  - [Course resources: notes, labs and homeworks solutions](https://people.eecs.berkeley.edu/~bh/61a-pages/)
+- [Lectures: MIT](https://ocw.mit.edu/courses/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video_galleries/video-lectures/)
 - https://people.eecs.berkeley.edu/~bh/ssch27/appendix-running.html
 
 ## Scheme
@@ -41,7 +42,7 @@ Absolute path (Unix)
 (load "/home/user/sicp/utils.scm")
 ```
 
-TODO: Write util to make it easier to load absolute files as described [here](https://people.eecs.berkeley.edu/~bh/ssch27/appendix-running.html#text2).
+TODO: Write util to make it easier to load absolute files as described [here](https://people.eecs.berkeleqy.edu/~bh/ssch27/appendix-running.html#text2).
 
 ## Progress
 
