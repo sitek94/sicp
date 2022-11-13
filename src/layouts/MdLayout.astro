@@ -29,7 +29,7 @@ const {frontmatter} = Astro.props
       const isCompleted = ProgressTracker.toggle(id)
       if (isCompleted) {
         AudioPlayer.play('questCompleted')
-        Confetti.basic()
+        Confetti.fromTop()
       }
     })
   }

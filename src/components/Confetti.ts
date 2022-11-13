@@ -4,18 +4,12 @@ import confetti from 'canvas-confetti'
  * @link https://www.kirilv.com/canvas-confetti/
  */
 export class Confetti {
-  public static basic() {
+  public static fromTop() {
     confetti({
-      particleCount: 50,
-      angle: 60,
-      spread: 55,
-      origin: {x: -0.1},
-    })
-    confetti({
-      particleCount: 50,
-      angle: 120,
-      spread: 55,
-      origin: {x: 1.1},
+      particleCount: 100,
+      spread: 120,
+      origin: {y: -0.2},
+      angle: 270,
     })
   }
 }
