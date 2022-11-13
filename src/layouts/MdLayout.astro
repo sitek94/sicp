@@ -11,6 +11,7 @@ const {frontmatter} = Astro.props
 
 <script>
   import {AudioPlayer} from '../components/AudioPlayer'
+  import {Confetti} from '../components/Confetti'
 
   import {ProgressTracker} from '../components/ProgressTracker'
 
@@ -22,10 +23,13 @@ const {frontmatter} = Astro.props
 
     input.checked = ProgressTracker.isCompleted(id)
 
-    input.addEventListener('change', () => {
+    input.addEventListener('change', event => {
+      console.log(event)
+
       const isCompleted = ProgressTracker.toggle(id)
       if (isCompleted) {
         AudioPlayer.play('questCompleted')
+        Confetti.basic()
       }
     })
   }

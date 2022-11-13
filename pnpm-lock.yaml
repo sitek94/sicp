@@ -4,6 +4,7 @@ specifiers:
   '@astrojs/mdx': ^0.11.6
   '@astrojs/tailwind': ^2.1.2
   '@tailwindcss/typography': ^0.5.8
+  '@types/canvas-confetti': ^1.4.3
   astro: ^1.6.7
   canvas-confetti: ^1.6.0
   clsx: ^1.2.1
@@ -22,6 +23,7 @@ dependencies:
 
 devDependencies:
   '@tailwindcss/typography': 0.5.8_tailwindcss@3.2.4
+  '@types/canvas-confetti': 1.4.3
   prettier: 2.7.1
   prettier-plugin-astro: 0.7.0
   prettier-plugin-tailwindcss: 0.2.0-beta.1_prettier@2.7.1
@@ -622,6 +624,10 @@ packages:
     dependencies:
       '@babel/types': 7.20.2
     dev: false
+
+  /@types/canvas-confetti/1.4.3:
+    resolution: {integrity: sha512-UwFPTsW1ZwVyo/ETp4hPSikSD7yl2V42E3VWBF5P/0+DHO4iajyceWv7hfNdZ2AX5tkZnuViiBWOqyCPohU2FQ==}
+    dev: true
 
   /@types/debug/4.1.7:
     resolution: {integrity: sha512-9AonUzyTjXXhEOa0DnqpzZi6VHlqKMswga9EXjpXnnqxwLtdvPPtlO8evrI5D9S6asFRCQ6v+wpiUKbw+vKqyg==}
