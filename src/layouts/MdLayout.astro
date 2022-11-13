@@ -8,3 +8,25 @@ const {frontmatter} = Astro.props
     <slot />
   </div>
 </BaseLayout>
+
+<script>
+  import {AudioPlayer} from '../components/AudioPlayer'
+
+  import {ProgressTracker} from '../components/ProgressTracker'
+
+  const checkmarkInputs =
+    document.querySelectorAll<HTMLInputElement>('.checkmark input')
+
+  for (const input of checkmarkInputs) {
+    const id = input.id
+
+    input.checked = ProgressTracker.isCompleted(id)
+
+    input.addEventListener('change', () => {
+      const isCompleted = ProgressTracker.toggle(id)
+      if (isCompleted) {
+        AudioPlayer.play('questCompleted')
+      }
+    })
+  }
+</script>

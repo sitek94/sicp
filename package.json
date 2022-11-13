@@ -1,6 +1,5 @@
 {
-  "name": "www",
-  "type": "module",
+  "name": "sicp",
   "version": "0.0.1",
   "private": true,
   "scripts": {
