@@ -10,7 +10,7 @@ const {id} = Astro.props
   <input id={id} type="checkbox" class="peer hidden" />
   <label
     for={id}
-    class="transition duration-300 cursor-pointer border-gray-500 font-medium peer-checked:bg-green-200 peer-checked:text-green-900 peer-checked:border-green-900 inline-flex items-center gap-2 px-2 py-1 border-2 rounded-md"
+    class="inline-flex cursor-pointer items-center gap-2 rounded-md border-2 border-gray-500 px-2 py-1 font-medium transition duration-300 peer-checked:border-primary-700 peer-checked:bg-primary-200 peer-checked:text-primary-700 peer-checked:dark:border-primary-300 peer-checked:dark:text-white peer-checked:dark:bg-primary-600"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -18,7 +18,7 @@ const {id} = Astro.props
       viewBox="0 0 24 24"
       stroke-width="2"
       stroke="currentColor"
-      class="w-6 h-6"
+      class="h-6 w-6"
     >
       <path
         stroke-linecap="round"
