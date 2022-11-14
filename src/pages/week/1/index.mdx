@@ -3,6 +3,7 @@ layout: '../../../layouts/MdLayout.astro'
 ---
 
 import Checkmark from '../../../components/Checkmark.astro'
+import Answer from '../../../components/Answer.astro'
 
 # CS 61A Week 1: Functional programming
 
@@ -24,6 +25,16 @@ every in these problems; use recursion.
     Pig Latin procedure.
 
     <Checkmark id="week/1/ex-1" />
+
+    <Answer>
+      Original "if" is implemented in a way that it will only evaluate
+      "else-clause", when the predicate is falsy. "new-if" is a procedure and
+      because our version of Scheme is using applicable order of execution, it's
+      going to first evaluate the arguments. So it's going to evaluate
+      predicate, then-clause and else-clause ahead of time. This leads to an
+      infinite loop, because within else-clause we've got a recursive call to
+      "sqrt-iter".
+    </Answer>
 
 2.  Write a procedure squares that takes a sentence of numbers as its argument
     and returns a sentence of the squares of the numbers:
