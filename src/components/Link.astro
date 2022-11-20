@@ -9,11 +9,12 @@ interface Props {
 
 const {url, external} = Astro.props
 
-const isActive = Astro.url.pathname === url
+const normalizedUrl = normalizeUrl(url)
+const isActive = Astro.url.pathname === normalizedUrl
 ---
 
 <a
-  href={normalizeUrl(url)}
+  href={normalizedUrl}
   target={external ? '_blank' : undefined}
   class={clsx(
     'block whitespace-nowrap border-l-4  px-3 py-2 text-sm font-medium',
