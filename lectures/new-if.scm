@@ -1,4 +1,4 @@
-;;; New if
+;;; Exercise 1.1
 
 (define (new-if predicate 
                 then-clause 

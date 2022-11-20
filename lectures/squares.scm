@@ -1,3 +1,5 @@
+;;; Exercise 1.2
+
 (load "_simply.scm")
 (load "square.scm")
 
