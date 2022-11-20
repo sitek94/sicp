@@ -186,6 +186,20 @@ every in these problems; use recursion.
 
     <Checkmark id="week/1/ex-6" />
 
+    <Answer>
+
+        If the following example will throw an error about unbound variable, it means that `or` is not a special
+        form. If it is a special form, it will return `true` and won't evaluate the second expression with a bug.
+
+        ```scheme
+        (or (= 0 0) (= x 5))
+        ```
+
+        Benefits of `or` as a special form:
+            - performance - if some expression is truthy there is no need to evaluate the subsequent ones
+
+    </Answer>
+
 ## Features of the week
 
 - Unix feature of the week: man
@@ -205,6 +219,7 @@ you can say M-x describe-key then C-g.
 You aren’t going to be tested on these system features, but it’ll make the rest
 of your life a lot easier if you learn about them.
 
-```
+## References
 
-```
+- [Homework assignments](https://people.eecs.berkeley.edu/~bh/61a-pages/Volume1/hw.pdf)
+- [Official solutions](https://people.eecs.berkeley.edu/~bh/61a-pages/Solutions/week1)
