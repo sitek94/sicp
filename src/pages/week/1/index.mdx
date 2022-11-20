@@ -108,6 +108,23 @@ every in these problems; use recursion.
 
     <Checkmark id="week/1/ex-4" />
 
+    <Answer>
+
+    ```scheme
+    (define (ordered? numbers)
+        (define length (count numbers))
+
+        (cond
+            ((= length 0) #t)
+            ((= length 1) #t)
+            ((or (= (item 1 numbers) (item 2 numbers)) (< (item 1 numbers) (item 2 numbers))) (ordered? (bf numbers)))
+            (else #f)
+        )
+    )
+    ```
+
+    </Answer>
+
 5.  Write a procedure ends-e that takes a sentence as its argument and returns a
     sentence containing only those words of the argument whose last letter is E:
 
@@ -117,6 +134,30 @@ every in these problems; use recursion.
     ```
 
     <Checkmark id="week/1/ex-5" />
+
+    <Answer>
+
+    ```scheme
+    (define (ends-e sentence)
+        (define (is-last-letter-e? word)
+            (equal? (last word) 'e)
+        )
+
+        (if (is-empty? sentence)
+            sentence
+            (if (is-last-letter-e? (first sentence))
+                (se (first sentence) (ends-e (bf sentence)))
+                (ends-e (bf sentence))
+            )
+        )
+    )
+
+    (define (is-empty? list)
+        (= (count list) 0)
+    )
+    ```
+
+    </Answer>
 
 6.  Most versions of Lisp provide and and or procedures like the ones on
     page 19. In principle there is no reason why these can’t be ordinary
