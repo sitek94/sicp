@@ -9,7 +9,7 @@ const {id} = Astro.props
 ---
 
 <div class="checkmark relative">
-  <input id={id} type="checkbox" class="peer w-0 h-0 absolute" />
+  <input id={id} type="checkbox" class="peer absolute h-0 w-0" />
   <label
     for={id}
     class={clsx(

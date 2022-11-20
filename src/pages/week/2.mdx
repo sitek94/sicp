@@ -1,0 +1,68 @@
+---
+layout: '../../layouts/MdLayout.astro'
+---
+
+import Checkmark from '../../components/Checkmark.astro'
+import Answer from '../../components/Answer.astro'
+
+# CS 61A Week 2: Higher-order procedures
+
+## Reading
+
+- Abelson & Sussman, Section 1.3
+
+  Note that we are skipping 1.2; we’ll get to it later. Because of this, never
+  mind for now the stuff about iterative versus recursive processes in 1.3 and
+  in the exercises from that section. Don’t panic if you have trouble with the
+  half-interval example on pp. 67–68; you can just skip it. Try to read and
+  understand everything else.
+
+  <Checkmark id="week/2/reading" />
+
+## Homework
+
+1.  Abelson & Sussman, exercises 1.31(a), 1.32(a), 1.33, 1.40, 1.41, 1.43, 1.46
+
+    (Pay attention to footnote 51; you’ll need to know the ideas in these
+    exercises later in the semester.)
+
+    <Checkmark id="week/2/ex-1" />
+
+2.  Last week you wrote procedures squares, that squared each number in its
+    argument sentence, and saw pigl-sent, that pigled each word in its argument
+    sentence. Generalize this pattern to create a higher-order procedure called
+    every that applies an arbitrary procedure, given as an argument, to each
+    word of an argument sentence. This procedure is used as follows:
+
+    ```scheme
+    (every square ’(1 2 3 4)) (1 4 9 16) (every first ’(nowhere man)) (n m)
+    ```
+
+    <Checkmark id="week/2/ex-2" />
+
+3.  Our Scheme library provides versions of the every function from the last
+    exercise and the keep function shown in lecture. Get familiar with these by
+    trying examples such as the following:
+
+    ```scheme
+    (every (lambda (letter) (word letter letter)) ’purple)
+    (every (lambda (number) (if (even? number) (word number number) number))
+    ’(781 5 76 909 24))
+    (keep even? ’(781 5 76 909 24))
+    (keep (lambda (letter) (member? letter ’aeiou)) ’bookkeeper)
+    (keep (lambda (letter) (member? letter ’aeiou)) ’syzygy)
+    (keep (lambda (letter) (member? letter ’aeiou)) ’(purple syzygy))
+    (keep (lambda (wd) (member? ’e wd)) ’(purple syzygy))
+    ```
+
+    <Checkmark id="week/2/ex-3" />
+
+## Features of the week
+
+- Unix feature of the week: pine, mail, firefox
+- Emacs feature of the week: M-x info, C-x u (undo)
+
+## References
+
+- [Homework assignments](https://people.eecs.berkeley.edu/~bh/61a-pages/Volume1/hw.pdf)
+- [Official solutions](https://people.eecs.berkeley.edu/~bh/61a-pages/Solutions/week2)
